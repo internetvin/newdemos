@@ -7,15 +7,41 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        @media only screen and (max-width: 400px) {
+            .responsive-div {
+                width: 90%;
+                margin: auto;
+            }
+        }
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            .responsive-div {
+                width: 75%;
+                margin: auto;
+            }
+        }
+        @media only screen and (min-width: 601px) and (max-width: 900px) {
+            .responsive-div {
+                width: 60%;
+                margin: auto;
+            }
+        }
+        @media only screen and (min-width: 901px) {
+            .responsive-div {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    </style>
 </head>
-<body style="margin: 0; padding: 0; box-sizing: border-box;"">
+<body style="margin: auto; padding: 0; box-sizing: border-box;">
 
 
-        <div style="display: flex; justify-content: center;">
+       <div class="responsive-div" style="display: flex; justify-content: center; margin: auto;">
             <img src="new_demos_logos/newdemos_white.png" alt="New Demos Logo" style="width:100px; height: auto;">
         </div>
 
-        <div style="display: flex; justify-content: center; width: 60%; margin: auto; padding: 20px;">
+        <div class="responsive-div" style="display: flex; justify-content: center; padding: 20px;">
             <div>
                 <a href="index.html">Home</a> |
                 <a href="criteria.html">Demo Criteria</a> |
@@ -27,7 +53,7 @@
         <br>
 
 
-        <div style="width: 60%; margin: auto;">
+        <div class="responsive-div" style="margin: auto;">
             <p>New Demos is an event series that showcases curated demos in Roncesvalles, Toronto, and it goes like this: </p>
             <ul>
                 <li>5 mins limit per demo.</li>
@@ -44,14 +70,9 @@
 
 
       
-            <div style="width: 60%; margin: auto;">
+            <div class="responsive-div" style="margin: auto;">
                 <b>Updates:</b><br><br> 
 
-                <b>January 17 2024</b><br>
-                    <ul>
-                        <li>We completed New Demos 1 on Jan 11 2024.</li>
-                        <li>It was a success, but there's much to improve.</li>
-                    </ul>
                 <b>January 17 2024</b><br>
                     <ul>
                         <li>We completed New Demos 1 on Jan 11 2024.</li>
